@@ -7,11 +7,25 @@ body {
     background: url('Fondo.jpg') center/cover no-repeat fixed; /* Establece la imagen de fondo */
     height: 100vh; 
   }
-.imagen_Perfil{
-    border-radius: 20px;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    box-sizing: border-box;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 0px;
+    margin-left: 10px;
     max-width: 75%;
     max-height: fit-content;
-    margin: 5%;
+    text-align: left;
+    
+  }
+.imagen_Perfil{
+    border-radius: 20px;
+    max-width: 80%;
+    max-height: fit-content;
+    margin: 0px;
 
 }
 .video{
@@ -26,7 +40,8 @@ body {
 .color_Fondo_2{
     background-color: rgb(255, 255, 255);
 }
-@media (max-width: 1440px) {
+
+@media (max-width: 1024px) {
     ul {
         list-style-type: none;
         margin: 0px;
@@ -36,9 +51,11 @@ body {
     }
     .seccion_Lateral{
         border-radius: 20px;
+        padding: 20px;
     }
     .seccion_Principal{
         border-radius: 20px;
+        padding: 20px;
     }
     .text_style{
         font-size: 20px;
@@ -50,6 +67,15 @@ body {
         word-break: break-all;
         overflow: hidden;
     }
+    .text_style_Sin_Romper{
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif; /* Asegúrate de tener la fuente Montserrat disponible */
+        font-weight: 600; /* 600 generalmente corresponde a semi-negrita (semi bold) */
+        color: rgb(93, 109, 126);
+        padding: 10px;
+        text-align: left;
+    }
+    
     .H1_Style{
         font-size: 38px;
         font-family: 'Montserrat', sans-serif; /* Asegúrate de tener la fuente Montserrat disponible */
@@ -71,7 +97,7 @@ body {
     
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
     ul {
         list-style-type: none;
         margin: 10px;
@@ -81,15 +107,13 @@ body {
     }
     .seccion_Lateral{
         border-radius: 20px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding: 20px;
         margin-left: 100px;
         text-align: left;
     }
     .seccion_Principal{
         border-radius: 20px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding: 20px;
         margin-right: 100px;
         text-align: left;
     }
@@ -101,7 +125,13 @@ body {
         padding: 10px;
         word-break: break-all;
         overflow: hidden;
-    
+    }
+    .text_style_Sin_Romper{
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif; /* Asegúrate de tener la fuente Montserrat disponible */
+        font-weight: 600; /* 600 generalmente corresponde a semi-negrita (semi bold) */
+        color: rgb(93, 109, 126);
+        padding: 10px;
     }
     .H1_Style{
         font-size: 38px;
@@ -160,6 +190,13 @@ body {
         overflow: hidden;
     
     }
+    .text_style_Sin_Romper{
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif; /* Asegúrate de tener la fuente Montserrat disponible */
+        font-weight: 600; /* 600 generalmente corresponde a semi-negrita (semi bold) */
+        color: rgb(93, 109, 126);
+        padding: 10px;
+    }
     .H1_Style{
         font-size: 58px;
         font-family: 'Montserrat', sans-serif; /* Asegúrate de tener la fuente Montserrat disponible */
@@ -175,6 +212,7 @@ body {
         font-weight: 600; /* 600 generalmente corresponde a semi-negrita (semi bold) */
         color: rgb(93, 109, 126);
         margin: 10px;
+        background-color: rgb(236, 239, 241);
     }
     .margin_icono{
         padding: 0px;
@@ -186,8 +224,15 @@ body {
 
 .contenedor_style{
     border-radius: 20px;
-
     margin-left: 20px;
     margin-right: 20px;
+    background-color: rgb(216, 223, 228);
+}
+.contenedor_skills_style{
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: inline-block;
     background-color: rgb(216, 223, 228);
 }
