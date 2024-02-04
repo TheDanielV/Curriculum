@@ -4,10 +4,8 @@ h1{
     margin: 0px;
 }
 body {
-    margin: 0; /* Elimina el margen predeterminado del body */
-    padding: 0; /* Elimina el relleno predeterminado del body */
     background: url('Fondo.jpg') center/cover no-repeat fixed; /* Establece la imagen de fondo */
-    height: 100vh; /* Establece la altura del fondo al 100% del viewport */
+    height: 100vh; 
   }
 .imagen_Perfil{
     border-radius: 20px;
@@ -16,13 +14,19 @@ body {
     margin: 5%;
 
 }
+.video{
+
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
 .color_Fondo_1{
     background-color: rgb(236, 239, 241);
 }
 .color_Fondo_2{
     background-color: rgb(255, 255, 255);
 }
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
     ul {
         list-style-type: none;
         margin: 0px;
@@ -43,6 +47,8 @@ body {
         color: rgb(93, 109, 126);
         padding: 10px;
         text-align: left;
+        word-break: break-all;
+        overflow: hidden;
     }
     .H1_Style{
         font-size: 38px;
@@ -60,7 +66,7 @@ body {
         color: rgb(93, 109, 126);
         margin-top: 10px;
         margin-bottom: 10px;
-        background-color: rgb(236, 239, 241);
+
     }
     
 }
@@ -93,6 +99,8 @@ body {
         font-weight: 600; /* 600 generalmente corresponde a semi-negrita (semi bold) */
         color: rgb(93, 109, 126);
         padding: 10px;
+        word-break: break-all;
+        overflow: hidden;
     
     }
     .H1_Style{
@@ -110,7 +118,7 @@ body {
         font-weight: 600; /* 600 generalmente corresponde a semi-negrita (semi bold) */
         color: rgb(93, 109, 126);
         margin: 10px;
-        background-color: rgb(236, 239, 241);
+
     }
     .margin_icono{
         padding: 0px;
@@ -120,11 +128,66 @@ body {
 }
 
   
+@media (min-width: 2560px) {
+    ul {
+        list-style-type: none;
+        margin: 10px;
+      }
+    .main{
+        padding: 30px;
+    }
+    .seccion_Lateral{
+        border-radius: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: 100px;
+        text-align: left;
+    }
+    .seccion_Principal{
+        border-radius: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-right: 100px;
+        text-align: left;
+    }
+    .text_style{
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif; /* Asegúrate de tener la fuente Montserrat disponible */
+        font-weight: 600; /* 600 generalmente corresponde a semi-negrita (semi bold) */
+        color: rgb(93, 109, 126);
+        padding: 10px;
+        word-break: break-all;
+        overflow: hidden;
+    
+    }
+    .H1_Style{
+        font-size: 58px;
+        font-family: 'Montserrat', sans-serif; /* Asegúrate de tener la fuente Montserrat disponible */
+        font-weight: 600; /* 600 generalmente corresponde a semi-negrita (semi bold) */
+        color: rgb(93, 109, 126);
+        margin: 10px;
+        border-bottom: 4px solid rgb(53, 74, 95);
+
+    }
+    .H2_Style{
+        font-size: 46px;
+        font-family: 'Montserrat', sans-serif; /* Asegúrate de tener la fuente Montserrat disponible */
+        font-weight: 600; /* 600 generalmente corresponde a semi-negrita (semi bold) */
+        color: rgb(93, 109, 126);
+        margin: 10px;
+        background-color: rgb(236, 239, 241);
+    }
+    .margin_icono{
+        padding: 0px;
+        margin-left: 20px;
+    }
+    
+}
 
 
 .contenedor_style{
     border-radius: 20px;
-    margin: 10px;
+
     margin-left: 20px;
     margin-right: 20px;
     background-color: rgb(216, 223, 228);
